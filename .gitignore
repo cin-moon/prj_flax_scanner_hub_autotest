@@ -1,0 +1,15 @@
+.idea
+venv
+geckodriver-.log
+drivers
+drivers.json
+output
+log.html
+output.xml
+report.html
+config/__pycache__
+tests/__pycache__
+pages/__pycache__
+.pytest_cache/
+__pycache__
+resources/.pytest_cache/

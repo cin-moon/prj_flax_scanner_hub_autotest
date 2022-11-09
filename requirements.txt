@@ -1,0 +1,8 @@
+robotframework
+robotframework-dependencylibrary
+robotframework-seleniumlibrary
+selenium
+webdriver-manager
+robotframework-jsonlibrary
+robotframework-requests
+robotframework-jsonschemalibrary
