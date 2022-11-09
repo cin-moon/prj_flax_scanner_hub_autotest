@@ -1,7 +1,7 @@
-# Ninja FE Automation Test
+# Flax Scanner Hub FE Automation Test
 [![CircleCI](https://circleci.com/gh/Cinnamon/ninja-fe-auto-test.svg?style=shield&circle-token=d69c9bdbaab2d501cedb8dcdd1371039d345eb22)](https://circleci.com/gh/Cinnamon/ninja-fe-auto-test)
 
-🤖 This repo automates regression test for Ninja FE.
+🤖 This repo automates regression test for FSH FE.
 - Language: Python
 - Core Framework: Robot Framework
 - UI Interactions: Page Object Module
@@ -52,22 +52,44 @@
 ```
 #  Structure 
 ```
-├─config
-│  └─config.robot
-│  └─sys_config.robot
-├─data
-│  └─a.pdf
-├─pages
-│  └─common.robot
-│  └─changepwPage.robot
-│  └─editPage.robot
-│  └─homePage.robot
-│  └─loginPage.robot
-│  └─userPage.robot
-├─resources
-│  └─driversync.py
-├─tests
-   └─test_authen.robot
-   └─test_single_job.robot
-   └─test_user.robot
++---config
+|       config.robot
+|       sys_config.robot
+|       
++---data
+|       healthcheck_pdf_needtoreview.pdf
+|       healthcheck_png_needtoreview.png
+|       healthcheck_tif_needtoreview.tif
+|       
++---output
+|       Health Check 237ppZwX7SlU_20221102002745.csv
+|       Health Check obgNxETs41XE_healthcheck_png_needtoreview.csv
+|       ?????_h20191111000188-A01100030-001.csv
+|       
++---pages
+|       allWorkflowPage_fsh.robot
+|       common.robot
+|       createWorkflow_BasicInfor_Page.robot
+|       createWorkflow_common.robot
+|       createWorkflow_SelectPipeline_Page.robot
+|       editWorkflow.robot
+|       homePage_fsh.robot
+|       loginPage_fsh.robot
+|       ocrResultEditorPage_fsh.robot
+|       workflowPage.robot
+|       
++---resources
+|   |   driversync.py
+|   |   
+|   \---__pycache__
+|           driversync.cpython-310.pyc
+|           
++---tests
+|       start_browser.robot
+|       test_create_workflow.robot
+|       test_delete_job.robot
+|       test_delete_workflow.robot
+|       test_download_file.robot
+|       test_edit_workflow.robot
+|       test_upload_file.robot
 ```
