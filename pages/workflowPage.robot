@@ -162,8 +162,9 @@ verify csv file content
     ${lines}=    Read Csv File To List  ${file}
     ${csv_key_list}=         Get From List   ${lines}    0
     ${csv_value_list}=       Get From List   ${lines}    ${csv_row}
-    Lists Should Be Equal    ${csv_value_list}       ${value_list}
     Lists Should Be Equal    ${csv_key_list}         ${key_list}
+    Lists Should Be Equal    ${csv_value_list}       ${value_list}
+
 
 
 

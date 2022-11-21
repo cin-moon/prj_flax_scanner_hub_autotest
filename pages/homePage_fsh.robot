@@ -11,7 +11,7 @@ ${home_button}                  xpath://img[@alt='Logo']
 ${workflow_button}              xpath://div[text()='Workflow']
 
 ${view_all_workflow_button}     xpath://button[text()='View all Workflows']
-${workflow_menu_item}           xpath://div[@class='css-5yno0c' and text()='name']
+${workflow_menu_item}           xpath://div[@class='css-zvlevn' and text()='name']
 ${workflow_menu_first_item}     xpath:(//div[@class='css-5yno0c'])[1]
 ${workflow_dropdown_list}       id:stack-workflow
 

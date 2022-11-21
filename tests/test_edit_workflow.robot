@@ -61,14 +61,14 @@ Test Case: Edit Workflow Pipeline And Confirm Pipeline Change
     edit workflow pipeline and confirm changes      ${new_pipeline}
     verify workflow pipeline after update   ${new_pipeline}
 
-Test Case: Edit Workflow Output field selection
-    [Documentation]
-    ...     Edit Workflow Output field selection
-    open edit workflow page     ${workflow_code}
-    Sleep   2s
-    open editor section for pipeline and output field
-    Sleep    2s
-    select output fields      @{output_field_id_list}
+#Test Case: Edit Workflow Output field selection
+#    [Documentation]
+#    ...     Edit Workflow Output field selection
+#    open edit workflow page     ${workflow_code}
+#    Sleep   2s
+#    open editor section for pipeline and output field
+#    Sleep    2s
+#    select output fields      @{output_field_id_list}
 
 *** Keywords ***
 test setup for edit workflow test cases
